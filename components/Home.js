@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 // Define the styled component using tw.div
 const Wrapper = tw.div`
-  flex flex-col bg-red-300 h-screen
+  flex flex-col bg-blue-300 h-screen
 `;
 
 const Map = tw.div`
@@ -55,7 +55,17 @@ const InputButton = tw.div`
 const Home = () => {
   return (
     <Wrapper>
-      <Map>map</Map>
+      <Map>
+        
+        
+        
+        mahbjh
+
+
+
+      </Map>
+
+
       <ActionItems>
         <Header>
           <ImageContainer>
@@ -75,6 +85,7 @@ const Home = () => {
           </Profile>
         </Header>
         <Actionbuttons>
+          <Link href={"/dashboard"}>
           
             <Button>
               <img
@@ -84,6 +95,7 @@ const Home = () => {
               />
               Car
             </Button>
+            </Link>
           
           <Button>
             <img
