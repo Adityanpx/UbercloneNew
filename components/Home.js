@@ -37,7 +37,7 @@ const UserImage = tw.img`
 `;
 
 const Actionbuttons = tw.div`
-  flex  
+  grid grid-cols-3 
 `;
 
 const Button = tw.div`
@@ -59,7 +59,7 @@ const Home = () => {
         
         
         
-        mahbjh
+        map
 
 
 
@@ -99,22 +99,26 @@ const Home = () => {
           
           <Button>
             <img
-              className=''
-              src="Ubercar1.webp"
+              className='h-16 mt-4'
+              src="auto.webp"
               alt="Uber logo"
             />
-            Ride
+            Auto
           </Button>
           <Button>
             <img
-              className=''
-              src="Ubercar1.webp"
+              className='h-16 mt-3'
+              src="newbike.png"
               alt="Uber logo"
             />
-            Reserved
+            Bike
           </Button>
         </Actionbuttons>
-        <InputButton>Where to go </InputButton>
+        <InputButton>  
+        <input 
+        className='bg-gray-200 border-none outline-none '
+        placeholder='Where to go ?'/>
+        </InputButton>
       </ActionItems>
     </Wrapper>
   );
